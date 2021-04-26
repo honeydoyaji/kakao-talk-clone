@@ -49,10 +49,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     animation: hideSplashScreen 0.6s ease-in-out forwards;
-    animation-delay: 1s
+    animation-delay: 1.4s
 }
 #splash-screen img {
     width: 150px;
     height: 150px;
+}
+
+@keyframes textMoving {
+    from {
+        scale: 1.5;
+    } to {
+        scale: 0;
+    }
+}
+#splash-screen h4 {
+    font-size: 20px;
+    font-weight: 600;
+    animation: textMoving 1.4s ease-in-out forwards;
 }
